@@ -5,8 +5,10 @@ export default class GifList extends React.Component {
         return this.props.gifs.map((gif, index) => <li key={index}><img src={gif.imageUrl} alt={gif.title}/></li> )
     }
     render() {
-        return (<ul>
+        return (
+            <ul>
                 {this.listOfGifs()}
-            </ul>)
+            </ul>
+        )
     }
 }
